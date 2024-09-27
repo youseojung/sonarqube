@@ -16,12 +16,12 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/youseojung/sonarqube.git']]])
             }
         }
-
+/*
         stage('Install dependencies') {
             steps {
                 sh 'cd nodejs && npm install'
             }
-        }
+        }*/
 
        /* stage('Run tests') {
             steps {
